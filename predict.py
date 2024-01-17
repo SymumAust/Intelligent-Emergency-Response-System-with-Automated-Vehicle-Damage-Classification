@@ -17,3 +17,10 @@ print(names_dict)
 print(probs)
 
 print(names_dict[np.argmax(probs)])
+
+if names_dict[np.argmax(probs)] == 'severe':
+    print('Chances of occurring fatality very high. Sending the information.....')
+elif names_dict[np.argmax(probs)] == 'moderate':
+    print('Chances of occurring fatality is quite possible, taking initiative.....')
+elif names_dict[np.argmax(probs)] == 'minor':
+    print('Chance are very low. take your own step')
